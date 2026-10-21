@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Flip 3D - Онлайн Ремонт Домов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <div class="hud">
+            <h1>House Flip 3D</h1>
+            <div class="stats">
+                <p>Баланс: <span id="money">$5000</span></p>
+                <p>Опыт: <span id="exp">0</span> XP</p>
+                <p>Мусор убран: <span id="trash-count">0</span>/10</p>
+            </div>
+        </div>
+
+        <div class="crosshair">+</div>
+
+        <div class="toolbar">
+            <button class="tool-btn active" data-tool="walk">🚶 Ходьба</button>
+            <button class="tool-btn" data-tool="clean">🧹 Уборка</button>
+            <button class="tool-btn" data-tool="paint">🎨 Покраска</button>
+            <button class="tool-btn" data-tool="sell">💰 Продать дом</button>
+        </div>
+
+        <div class="instructions">
+            <p><b>W, A, S, D</b> - Движение</p>
+            <p><b>Мышь</b> - Обзор</p>
+            <p><b>ЛКМ</b> - Действие (убрать мусор / покрасить стену)</p>
+            <p><b>ESC</b> - Освободить курсор</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

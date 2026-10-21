@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.hud {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 8px;
+    pointer-events: auto;
+    width: 280px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hud h1 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: #ffcc00;
+}
+
+.stats p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    pointer-events: auto;
+    align-self: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.tool-btn {
+    background: #222;
+    color: #fff;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.tool-btn:hover {
+    background: #333;
+    border-color: #ffcc00;
+}
+
+.tool-btn.active {
+    background: #ffcc00;
+    color: #000;
+    border-color: #ffaa00;
+}
+
+.instructions {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    pointer-events: auto;
+    backdrop-filter: blur(5px);
+}
+
+.instructions p {
+    margin: 3px 0;
+}
